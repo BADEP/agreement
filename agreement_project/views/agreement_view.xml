@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <record model="ir.actions.act_window" id="action_project_task_agreement_specific">
+    <record id="action_project_task_agreement_specific" model="ir.actions.act_window">
         <field name="name">Tasks</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">project.task</field>
