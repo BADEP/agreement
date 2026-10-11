@@ -1,0 +1,4 @@
+id,name,model_id,group_id/id,operation,domain
+access_agreement_full,Full access on agreement grp,agreement,sales_team.group_sale_manager,crud,
+access_agreement_type_full,Full access on agreement type grp,agreement.type,sales_team.group_sale_manager,crud,
+access_agreement_type_read,Read access on agreement grp,agreement.type,base.group_user,r,
