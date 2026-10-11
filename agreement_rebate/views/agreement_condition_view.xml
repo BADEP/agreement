@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record id="agreement_rebate_condition_form" model="ir.ui.view">
         <field name="name">agreement.rebate.condition.form</field>

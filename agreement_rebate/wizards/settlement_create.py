@@ -177,7 +177,7 @@ class AgreementSettlementCreateWiz(models.TransientModel):
         vals = {
             "agreement_id": agreement.id,
             "partner_id": group["partner_id"].id
-            if "partner_id" in group and group["partner_id"]
+            if group.get("partner_id")
             else agreement.partner_id.id,
         }
         if agreement.rebate_type == "line":
