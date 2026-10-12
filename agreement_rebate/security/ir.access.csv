@@ -1,0 +1,17 @@
+id,name,model_id,group_id/id,operation,domain
+access_agreement_full,Full access on agreement grp,agreement,agreement_rebate.group_use_agreement_rebate,crud,
+access_agreement_type_full,Full access on agreement type grp,agreement.type,account.group_account_manager,crud,
+access_agreement_rebate_line_read,Read access on rebate lines to Employees,agreement.rebate.line,base.group_user,r,
+access_agreement_rebate_line_full,Full access on rebate lines grp,agreement.rebate.line,agreement_rebate.group_use_agreement_rebate,crud,
+access_agreement_rebate_section_read,Read access on rebate sections to Employees,agreement.rebate.section,base.group_user,r,
+access_agreement_rebate_section_full,Full access on rebate sections grp,agreement.rebate.section,agreement_rebate.group_use_agreement_rebate,crud,
+access_agreement_rebate_condition_read,Read access on rebate conditions to Employees,agreement.rebate.condition,base.group_user,r,
+access_agreement_rebate_condition_full,Full access on rebate conditions grp,agreement.rebate.condition,agreement_rebate.group_use_agreement_rebate,crud,
+access_agreement_rebate_settlement_read,Read access on rebate settlements to Employees,agreement.rebate.settlement,base.group_user,r,
+access_agreement_rebate_settlement_full,Full access on rebate settlements grp,agreement.rebate.settlement,agreement_rebate.group_use_agreement_rebate,crud,
+agreement_rebate_settlement_comp_rule,Rebate settlement multi-company,agreement.rebate.settlement,,crud,"[('company_id', 'in', [False] + company_ids)]"
+access_agreement_rebate_settlement_line_read,Read access on rebate settlement lines to Employees,agreement.rebate.settlement.line,base.group_user,r,
+access_agreement_rebate_settlement_line_full,Full access on rebate settlement lines grp,agreement.rebate.settlement.line,agreement_rebate.group_use_agreement_rebate,crud,
+agreement_rebate_settlement_line_comp_rule,Rebate settlement line multi-company,agreement.rebate.settlement.line,,crud,"[('company_id', 'in', [False] + company_ids)]"
+access_agreement_invoice_create_wiz,access_agreement_invoice_create_wiz,agreement.invoice.create.wiz,base.group_user,crud,
+access_agreement_settlement_create_wiz,access_agreement_settlement_create_wiz,agreement.settlement.create.wiz,base.group_user,crud,

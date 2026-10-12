@@ -4,7 +4,7 @@
 {
     "name": "Agreement Rebate",
     "summary": "Rebate in agreements",
-    "version": "19.0.1.0.0",
+    "version": "20.0.1.0.0",
     "development_status": "Beta",
     "category": "Agreement",
     "website": "https://github.com/OCA/agreement",
@@ -16,7 +16,6 @@
     "data": [
         "data/agreement_rebate_data.xml",
         "security/agreement_rebate_security.xml",
-        "security/ir.model.access.csv",
         "views/agreement_condition_view.xml",
         "views/agreement_view.xml",
         "views/agreement_rebate_settlement_view.xml",
@@ -24,5 +23,6 @@
         "wizards/invoice_create_views.xml",
         "wizards/settlement_create_views.xml",
         "views/agreement_menu_view.xml",
+        'security/ir.access.csv',
     ],
 }
