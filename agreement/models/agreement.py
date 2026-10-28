@@ -1,15 +1,13 @@
 # © 2017 Akretion (Alexis de Lattre <alexis.delattre@akretion.com>)
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from typing import ClassVar
-
 from odoo import api, fields, models
 
 
 class Agreement(models.Model):
     _name = "agreement"
     _description = "Agreement"
-    _inherit: ClassVar[list[str]] = ["mail.thread", "mail.activity.mixin"]
+    _inherit = ["mail.thread", "mail.activity.mixin"]  # noqa: RUF012
 
     _code_uniq = models.Constraint(
         "unique(code, commercial_partner_id, company_id)",
